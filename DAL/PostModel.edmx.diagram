@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d61eb4ff957d4bf396252063680a46a8" Name="Diagram1">
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Address" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Ad" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Category" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Comment" Width="1.5" PointX="7.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Contact" Width="1.5" PointX="3" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.FavLogoTitle" Width="1.5" PointX="3" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Log_Table" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Meta" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Post" Width="1.5" PointX="5.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.PostImage" Width="1.5" PointX="10.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.PostTag" Width="1.5" PointX="10.5" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.ProcessType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.SocialMedia" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.T_User" Width="1.5" PointX="0.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DotNetMVCDataBaseModel.Video" Width="1.5" PointX="3" PointY="30.5" IsExpanded="true" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Address_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Ads_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Category_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Post_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Comment_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Comment_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Contact_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_FavLogoTitle_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Log_Table_ProcessType" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Post_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_PostImage_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_PostTag_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_PostImage_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_PostTag_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_SocialMedia_T_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DotNetMVCDataBaseModel.FK_Video_T_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
