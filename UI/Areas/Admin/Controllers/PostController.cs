@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace UI.Areas.Admin.Controllers
 {
-    public class PostController : Controller
+    public class PostController : BaseController
     {
         // GET: Admin/Post
         public ActionResult Index()

@@ -95,6 +95,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Content\AdsImage\1212.png" />
+    <Content Include="Areas\Admin\Content\AdsImage\22.png" />
+    <Content Include="Areas\Admin\Content\AdsImage\431f343b-0883-4aa9-a093-24cf9ce88d23New Ads.png" />
+    <Content Include="Areas\Admin\Content\AdsImage\4366620d-3399-45a8-b20d-4ad0a6993b10Ads1.png" />
+    <Content Include="Areas\Admin\Content\AdsImage\5aadd201-4664-4759-8ede-68230441daecAds2.png" />
     <Content Include="Areas\Admin\Content\dist\css\adminlte.css" />
     <Content Include="Areas\Admin\Content\dist\css\adminlte.min.css" />
     <Content Include="Areas\Admin\Content\dist\css\alt\adminlte.components.css" />
@@ -148,6 +153,13 @@
     <Content Include="Areas\Admin\Content\dist\js\pages\dashboard.js" />
     <Content Include="Areas\Admin\Content\dist\js\pages\dashboard2.js" />
     <Content Include="Areas\Admin\Content\dist\js\pages\dashboard3.js" />
+    <Content Include="Areas\Admin\Content\FavImage\1aaea28e-2c5a-433e-b030-1279e1db8a1bAds1.png" />
+    <Content Include="Areas\Admin\Content\FavImage\6401d4db-8d88-4f03-9158-32dd10cddca5Ads1.png" />
+    <Content Include="Areas\Admin\Content\icons\approve.png" />
+    <Content Include="Areas\Admin\Content\icons\delete-16.ico" />
+    <Content Include="Areas\Admin\Content\icons\read.png" />
+    <Content Include="Areas\Admin\Content\icons\updates-16.ico" />
+    <Content Include="Areas\Admin\Content\JS\DeleteRecord.js" />
     <Content Include="Areas\Admin\Content\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Areas\Admin\Content\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Areas\Admin\Content\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2016,6 +2028,16 @@
     <Content Include="Areas\Admin\Content\plugins\uplot\uPlot.iife.js" />
     <Content Include="Areas\Admin\Content\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="Areas\Admin\Content\plugins\uplot\uPlot.min.css" />
+    <Content Include="Areas\Admin\Content\SocialMediaImages\0943776f-bbb3-455a-a32f-57390f3fe4342.png" />
+    <Content Include="Areas\Admin\Content\SocialMediaImages\1b57d8af-8904-402c-8222-795674b6f6603.png" />
+    <Content Include="Areas\Admin\Content\SocialMediaImages\2c2cdd65-d211-4591-9040-7575a50b56c1linkedin.jpg" />
+    <Content Include="Areas\Admin\Content\SocialMediaImages\79dec84f-0ff9-4467-8c61-4f8aecfed3a34.jpg" />
+    <Content Include="Areas\Admin\Content\SocialMediaImages\95fdbe81-a0b9-43d2-833d-6cb098032610facebook2.jpg" />
+    <Content Include="Areas\Admin\Content\UserImage\a414efca-ff92-4c53-b094-a16f015a1648avatar5.png" />
+    <Content Include="Areas\Admin\Content\UserImage\be2408b2-408b-4598-a377-910cbb6b0e6cuser8-128x128.jpg" />
+    <Content Include="Areas\Admin\Content\UserImage\c5f519e1-e381-4a33-bb38-a3cf077df350index.png" />
+    <Content Include="Areas\Admin\Content\UserImage\dff46a15-4657-4735-94e4-fbedb7edd5d5user7-128x128.jpg" />
+    <Content Include="Areas\Admin\Content\UserImage\user1-128x128.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -2023,8 +2045,15 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AddressController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FavController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MetaController.cs" />
     <Compile Include="Areas\Admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SocialMediaController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2168,8 +2197,36 @@
     <Content Include="Areas\Admin\Content\dist\js\.eslintrc.json" />
     <Content Include="Areas\Admin\Content\dist\js\adminlte.js.map" />
     <Content Include="Areas\Admin\Content\dist\js\adminlte.min.js.map" />
-    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Meta\AddMeta.cshtml" />
+    <Content Include="Areas\Admin\Views\Meta\MetaList.cshtml" />
+    <Content Include="Areas\Admin\Views\Meta\Partial\MetaForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Meta\UpdateMeta.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\MessageForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ModalMessage.cshtml" />
+    <Content Include="Areas\Admin\Views\SocialMedia\AddSocialMedia.cshtml" />
+    <Content Include="Areas\Admin\Views\SocialMedia\Partial\SocialMediaForm.cshtml" />
+    <Content Include="Areas\Admin\Views\SocialMedia\SocialMediaList.cshtml" />
+    <Content Include="Areas\Admin\Views\SocialMedia\UpdateSocialMedia.cshtml" />
+    <Content Include="Areas\Admin\Views\User\AddUser.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Partial\UserForm.cshtml" />
+    <Content Include="Areas\Admin\Views\User\UpdateUser.cshtml" />
+    <Content Include="Areas\Admin\Views\User\UserList.cshtml" />
+    <Content Include="Areas\Admin\Views\Address\AddAddress.cshtml" />
+    <Content Include="Areas\Admin\Views\Address\AddressList.cshtml" />
+    <Content Include="Areas\Admin\Views\Address\Partial\AddressForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Address\UpdateAddress.cshtml" />
+    <Content Include="Areas\Admin\Views\Ads\AddAds.cshtml" />
+    <Content Include="Areas\Admin\Views\Ads\AdsList.cshtml" />
+    <Content Include="Areas\Admin\Views\Ads\Partial\AdsForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Ads\UpdateAds.cshtml" />
+    <Content Include="Areas\Admin\Views\Fav\Partial\FavForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Fav\UpdateFav.cshtml" />
+    <Content Include="Areas\Admin\Views\Video\AddVideo.cshtml" />
+    <Content Include="Areas\Admin\Views\Video\Partial\VideoForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Video\UpdateVideo.cshtml" />
+    <Content Include="Areas\Admin\Views\Video\VideoList.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
