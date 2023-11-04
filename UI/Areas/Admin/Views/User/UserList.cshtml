@@ -35,10 +35,10 @@
                     <th>Delete</th>
                 </tr>
             </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
 
-            @foreach (var item in Model)
-            {
-                <tbody>
 
                     <tr id="a_@item.ID">
                         <td>@item.Name</td>
@@ -64,10 +64,9 @@
 
                     </tr>
 
+
+                }
                 </tbody>
-
-            }
-
             <tfoot>
                 <tr>
                     <th>Name</th>
