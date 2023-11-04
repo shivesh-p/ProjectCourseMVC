@@ -23,7 +23,7 @@ namespace UI.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Index(UserDTO user)
         {
-            if (ModelState.IsValid)
+            if (user.Username != null && user.Password != null)
             {
                 UserDTO us = _userBll.GetUserWithUsernameAndPassword(user);
                 if (us != null)
@@ -35,8 +35,8 @@ namespace UI.Areas.Admin.Controllers
                         UserStatic.Imagepath = us.Imagepath;
                         UserStatic.isAdmin = us.isAdmin;
                         //no process id yet hence 12 is hardcoded for now
-                        LogBLL.AddLog(General.ProcessType.Login, General.TableName.Login, 12);
-                        return RedirectToAction("Index", "Post");
+                        LogBLL.AddLog(General.ProcessType.Login, General.TableName.Login, -111);
+                        return RedirectToAction("PostList", "Post");
                     }
                 }
                 return View(user);
