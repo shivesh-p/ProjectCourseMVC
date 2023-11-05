@@ -1,4 +1,6 @@
 ﻿using DAL;
+using DTO;
+using System.Collections.Generic;
 
 namespace BLL
 {
@@ -8,6 +10,10 @@ namespace BLL
         {
             LogDAO.AddLog(Processtype, TableName, ProcessID);
         }
-       
+        LogDAO dao = new LogDAO();
+        public List<LogDTO> GetLogs()
+        {
+            return dao.GetLogs();
+        }
     }
 }

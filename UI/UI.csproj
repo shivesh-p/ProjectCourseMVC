@@ -2701,6 +2701,7 @@
     <Compile Include="Areas\Admin\Controllers\CommentController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContactController.cs" />
     <Compile Include="Areas\Admin\Controllers\FavController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LogController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\MetaController.cs" />
     <Compile Include="Areas\Admin\Controllers\PostController.cs" />
@@ -3021,6 +3022,7 @@
     <Content Include="Areas\Admin\Views\Contact\UnreadMessages.cshtml" />
     <Content Include="Areas\Admin\Views\Comment\AllComments.cshtml" />
     <Content Include="Areas\Admin\Views\Comment\UnapprovedComments.cshtml" />
+    <Content Include="Areas\Admin\Views\Log\LogList.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\HomeLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

@@ -174,6 +174,7 @@ namespace UI.Areas.Admin.Controllers
       
         public JsonResult GetCounts()
         {
+            //gets count for unread messages from contact and post details unapproved comments
             CountDTO dto = new CountDTO();
             dto = bll.GetCounts();
             return Json(dto, JsonRequestBehavior.AllowGet);

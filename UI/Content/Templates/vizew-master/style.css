@@ -524,27 +524,27 @@ input:focus {
       .header-area .vizew-main-menu .classy-navbar .classynav ul li a {
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
         color: #ffffff;
-        height: 90px;
-        line-height: 90px;
+       /* height: 90px;
+        line-height: 90px;*/
         border-bottom: 3px solid transparent; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .header-area .vizew-main-menu .classy-navbar .classynav ul li a {
-            height: 70px;
-            line-height: 70px;
+           /* height: 70px;
+            line-height: 70px;*/
             font-size: 14px; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .header-area .vizew-main-menu .classy-navbar .classynav ul li a {
-            height: 35px;
-            line-height: 35px;
+           /* height: 35px;
+            line-height: 35px;*/
             font-size: 14px;
             background-color: #222627;
             border-bottom: none; } }
         @media only screen and (max-width: 767px) {
           .header-area .vizew-main-menu .classy-navbar .classynav ul li a {
-            height: 35px;
-            line-height: 35px;
+           /* height: 35px;
+            line-height: 35px;*/
             font-size: 14px;
             background-color: #222627;
             border-bottom: none; } }
